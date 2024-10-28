@@ -1,5 +1,3 @@
-Realizando uma calculadora simples
-
 #include <stdio.h>
 
 int main(void) {
