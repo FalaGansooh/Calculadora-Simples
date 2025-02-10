@@ -1,57 +1,8 @@
-#include <stdio.h>
+Uma calculadora simples em C pode ser desenvolvida utilizando estruturas condicionais (switch ou if-else) e entrada de dados via scanf(). O código recebe dois números e um operador do usuário, realiza a operação correspondente (adição, subtração, multiplicação ou divisão) e exibe o resultado.
 
-int main(void) {
+Exemplo de funcionamento:
 
-  float N1, N2, Resultado;
-  int Operador;
-
-  printf ("Digite o primeiro número: ");
-  scanf("%f", &N1);
-
-  printf ("Digite o segundo número:");
-  scanf("%f",&N2);
-
-  printf ("Digite o operador:\n");
-  printf ("1 - Adição\n");
-  printf ("2 - Subtração\n");
-  printf ("3 - Multiplicação\n");
-  printf ("4 - Divisão\n");
-  
-  scanf("%d", &Operador);
-
-  switch (Operador){
-
-    case 1:
-    Resultado = N1+ N2;
-    printf("Resultado: %.2f\n", Resultado);
-    break;
-
-    case 2:
-    Resultado = N1 - N2;
-    printf("Resultado: %.2f\n", Resultado);
-    break;
-
-    case 3:
-    Resultado = N1 * N2;
-    printf("Resultado: %.2f\n", Resultado);
-    break; 
-
-    case 4:
-    if (N2 != 0){
-    Resultado = N1 / N2;
-    printf("Resultado: %.2f\n", Resultado);
-    }
-
-    else {
-      printf("Erro: Divisão por zero\n");
-    }
-    break;
-    default:
-    printf("Operador inválido\n");
-    break;
-  }
-
-  return 0;
-}
-    
-  
+O usuário insere dois números.
+Escolhe a operação desejada (+, -, *, /).
+O programa executa o cálculo e exibe o resultado na tela.
+Esse tipo de código é útil para iniciantes em programação, pois ensina conceitos fundamentais como entrada/saída, operadores e controle de fluxo.
